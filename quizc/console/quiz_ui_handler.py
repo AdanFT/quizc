@@ -25,9 +25,12 @@ class QuizUIHandler(object):
 
     @staticmethod
     def show_quiz(quiz_answer):
-        print(quiz_answer.quiz.title)
         print("=============================================")
+        print("Question Title:", quiz_answer.quiz.title)
+        print("=============================================")
+        
         for answer in quiz_answer.answers:
-            print(answer)
+            print("Answer:", answer.answers)
 
+        print("=============================================")
         return quiz_answer
